@@ -15,7 +15,7 @@ def hello_world():
         ]
     )
 
-    return completion.choices
+    return completion.choices[0].message
 
 if __name__ == '__main__':
     app.run(debug=True)
