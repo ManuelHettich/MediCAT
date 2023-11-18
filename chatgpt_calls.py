@@ -2,13 +2,12 @@ from openai import OpenAI
 client = OpenAI()
 
 PROMPT_PARAGPRAPHS = """
-Please just segment this text into paragraphs. Remove every footer and header pattern. Only give the output without any introduction or explanation. Retain the paragraph numbering in the output. If there is no paragraph number in front of it, it cannot be a new paragraph, so it belongs to the paragraph before.
-Make your output adhere to this JSON format (one object in the list per paragraph) but don't add a JSON comment at the beginning or end, just output the pure JSON as in this example:
+First remove every footer and header pattern. Then please segment the cleaned text into paragraphs. Only give the output without any introduction or explanation. Retain the paragraph numbering in the output. If there is no paragraph number in front of it, it cannot be a new paragraph, so it belongs to the paragraph before.
+Make your output adhere to this JSON format (one object in the list per paragraph) but DON'T add any comments or a JSON declaration like "```json" at the beginning or end, just output the pure JSON exactly as in this example:
 {
     [
         {
             "text": "",
-            "category_ID": "",
             "paragraph_number": "": 
         }
     ]
@@ -45,7 +44,7 @@ Specialty-dependent:
 	* Affects future income of the pediatric patient
 	* Increases risk for other conditions/diseases
 
-Make your output adhere to this JSON format (one object in the list per paragraph) but don't add a JSON comment at the beginning or end, just output the pure JSON as in this example:
+Make your output adhere to this JSON format (one object in the list per paragraph) but DON'T add any comments or a JSON declaration like "```json" at the beginning or end, just output the pure JSON exactly as in this example:
 {
     [
         {

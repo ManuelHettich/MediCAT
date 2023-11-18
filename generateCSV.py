@@ -1,6 +1,15 @@
 import csv
 import json
 
+CATEGORIES = {
+    1: "Diagnostic recommendation",
+    2: "Medication and other therapeutic recommendation",
+    3: "Monitoring and follow-up recommendation",
+    4: "Possible interactions with other guidelines, including comorbidities",
+    5: "Early warning signs, estimation of risk and poor evolution",
+    6: "No Category"
+}
+
 # Function to convert JSON data to CSV
 def generateCSV(paragraphs_evaluated):
 
@@ -13,12 +22,13 @@ def generateCSV(paragraphs_evaluated):
         writer = csv.writer(file)
 
         # Write the header
-        writer.writerow(["text", "category_ID", "paragraph_number"])
+        writer.writerow(["Paragraph", "Category", "Paragraph Number", "Relevancy Score"])
 
         # Write the data
         for item in paragraphs_evaluated:
             print(item)
-            writer.writerow([item["text"], item["category_ID"], item["paragraph_number"], item["relevancy_score"]])
+            category = CATEGORIES[item["category_ID"]]
+            writer.writerow([item["text"], category, item["paragraph_number"], item["relevancy_score"]])
 
 
 # test = """
