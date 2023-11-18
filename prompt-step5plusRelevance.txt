@@ -10,6 +10,8 @@ No introductions or explainations. Start directly with returning a table. The ta
 
 Relevance score factors:
 Specialty-independent:
+* time-criticality
+* urgency
 * Liability
 * Irreversability
 * Noticeable by a patient
@@ -22,3 +24,5 @@ Specialty-dependent:
 	* Developmental Milestone-relevant
 	* Affects future income of the pediatric patient
 	* Increases risk for other conditions/diseases
+
+No explanations or other text after the table. Just reply with the table and nothing before or after it.
