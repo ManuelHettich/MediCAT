@@ -1,7 +1,6 @@
 ﻿[
     {
         "text": "",
-        "category_ID": ,
-        "relevance_score": 
+        "category_ID":
     }
 ]
