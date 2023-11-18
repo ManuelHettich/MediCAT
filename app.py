@@ -85,7 +85,7 @@ def process_pdf():
         # Transform JSON into CSV
         print("-------- CSV Generation --------")
         generateCSV(json.loads(paragraphs_evaluated))
-        return send_file("categorized_file.csv", as_attachment=True)
+        return send_file("categorized_clinical_guideline.csv", as_attachment=True)
 
 
 def save_file(file_content, filename):
