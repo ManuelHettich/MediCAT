@@ -4,7 +4,22 @@
 
 Live Demo App: https://medicat-t3eqm.ondigitalocean.app/
 
-Pipeline:
+Medicat fully automates the analysis of clinical guidelines, a critical component in enhancing the Clinical Decision Support System (CDSS). By automating the categorization and extraction of content from clinical guidelines, we aim to ensure the highest possible scientific standard of treatment while significantly reducing the time required for updates.
+
+The process pipeline divides this guideline into specific categories:
+1. Diagnostic recommendations,
+2. Medication and other therapeutic recommendations,
+3. Recommendations of monitoring and follow-up,
+4. Possible interactions with other guidelines, including comorbidities,
+5. Early warning signs, estimation of risk and poor evolution,
+6. None of the above five categories.
+
+
+##  Pipeline:
+![alt1](pipeline_diagram.png)
+
+
+
 
 1) Medical guideline as PDF
 2) Run plaintext2.py on the PDF to extract plain text
