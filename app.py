@@ -34,6 +34,7 @@ def hello_world():
 
 @app.route('/process_pdf', methods=['POST'])
 def process_pdf():
+    # Check if the post request has the file part
     if 'file' not in request.files:
         flash('No file part')
         return redirect(request.url)
@@ -54,32 +55,54 @@ def process_pdf():
         print("-------- Plain PDF Text --------")
         print(plain_text)
 
-        # Save the output text to a file for debugging purposes
-        plain_text_path = 'input_text_file.txt'
-        
-        # Delete output text file if it already exists
-        if os.path.exists(plain_text_path):
-            os.remove(plain_text_path)
+        save_file(plain_text, "plain_text_file.txt")
 
-        # Write the output text to a file
-        with open(plain_text_path, 'w') as file:
-            file.write(plain_text)
+        # Save the plain text to a file for debugging purposes
+        #plain_text_path = 'plain_text_file.txt'
+        
+        # Delete plain text file if it already exists
+        #if os.path.exists(plain_text_path):
+        #    os.remove(plain_text_path)
+
+        # Write the plain text to a file
+        #with open(plain_text_path, 'w') as file:
+        #    file.write(plain_text)
 
         # Use LLM to segment the text into paragraphs
         paragraphs_json = plaintext_to_paragraphs(plain_text)
         print("-------- Paragraphs --------")
         print(paragraphs_json)
 
+        save_file(json.dumps(paragraphs_json), "paragraphs.txt")
+
         # Use the LLM to classify the paragraphs
         paragraphs_evaluated = paragraphs_evaluation(paragraphs_json)
         print("-------- Evaluation --------")
         print(paragraphs_evaluated)
+
+        save_file(json.dumps(paragraphs_evaluated), "paragraphs_evaluated.txt")
 
         # Transform JSON into CSV
         print("-------- CSV Generation --------")
         generateCSV(json.loads(paragraphs_evaluated))
         return send_file("categorized_file.csv", as_attachment=True)
 
+
+def save_file(file_content, filename):
+    """
+    Save the content to a file in UPLOAD_FOLDER
+    """
+    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+    
+    # Delete text file if it already exists
+    if os.path.exists(file_path):
+        os.remove(file_path)
+
+    # Write the text to a file
+    with open(file_path, 'w') as file:
+        file.write(file_content)
+    
+    return filename
 
 if __name__ == '__main__':
     app.run(debug=True)
