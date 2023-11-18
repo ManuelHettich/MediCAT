@@ -1,11 +1,16 @@
-from flask import Flask, request, jsonify, flash, render_template, request
+from flask import Flask, request, jsonify, flash, render_template, request, send_file
 from werkzeug.utils import secure_filename
 from chatgpt_calls import hello_chatgpt, plaintext_to_paragraphs, paragraphs_evaluation
 import os
+import json
 from plaintext import extract_pdf
+from generateCSV import generateCSV
 
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+OUTPUT_FOLDER = "output"
+os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+
 ALLOWED_EXTENSIONS = {'pdf'}
 
 app = Flask(__name__)
@@ -46,6 +51,7 @@ def process_pdf():
         # Extract the plain text from the PDF
         plain_text = extract_pdf(pdf_path)
 
+        print("-------- Plain PDF Text --------")
         print(plain_text)
 
         # Save the output text to a file for debugging purposes
@@ -68,8 +74,11 @@ def process_pdf():
         paragraphs_evaluated = paragraphs_evaluation(paragraphs_json)
         print("-------- Evaluation --------")
         print(paragraphs_evaluated)
-        
-        return paragraphs_evaluated
+
+        # Transform JSON into CSV
+        print("-------- CSV Generation --------")
+        generateCSV(json.loads(paragraphs_evaluated))
+        return send_file("categorized_file.csv", as_attachment=True)
 
 
 if __name__ == '__main__':

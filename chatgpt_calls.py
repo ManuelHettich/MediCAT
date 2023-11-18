@@ -3,7 +3,7 @@ client = OpenAI()
 
 PROMPT_PARAGPRAPHS = """
 Please just segment this text into paragraphs. Remove every footer and header pattern. Only give the output without any introduction or explanation. Retain the paragraph numbering in the output. If there is no paragraph number in front of it, it cannot be a new paragraph, so it belongs to the paragraph before.
-Make your output adhere to this JSON format (one object in the list per paragraph):
+Make your output adhere to this JSON format (one object in the list per paragraph) but don't add a JSON comment at the beginning or end, just output the pure JSON as in this example:
 {
     [
         {
@@ -25,9 +25,11 @@ Categorize each paragraph of the medical guideline fed into the GPT into one of 
 6: none of the above five categories
 
 Make your output adhere to this JSON format (one object in the list per paragraph).
-text: unshortened original paragraph
-category_ID: 1, 2, 3, 4, 5, 6
-paragraph_number: original paragraph number from the paragraph numbering
+text: unshortened original paragraph without the paragraph number at the beginning
+category_ID: 1, 2, 3, 4, 5, 6 (see above)
+paragraph_number: original paragraph number from the paragraph numbering as a string
+
+Make your output adhere to this JSON format (one object in the list per paragraph) but don't add a JSON comment at the beginning or end, just output the pure JSON as in this example:
 {
     [
         {
