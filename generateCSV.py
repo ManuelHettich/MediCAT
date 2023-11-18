@@ -21,7 +21,7 @@ def generateCSV(paragraphs_evaluated):
 
     print(paragraphs_evaluated)
     # Specify the CSV file name
-    csv_file_name = "categorized_file.csv"
+    csv_file_name = "categorized_clinical_guideline.csv"
     # Open the CSV file for writing
     with open(csv_file_name, mode='w', newline='', encoding='utf-8') as file:
         # Create a CSV writer
