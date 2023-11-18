@@ -6,10 +6,12 @@ Categorize each paragraph of the medical guideline fed into the GPT into one of 
 5: early warning signs, estimation of risk and poor evolution 
 6: none of the above five categories
 
-Return a table. The tables should have four columns. In the first column, there should the unshortend original paragraph - don't omit or shorten it - the full paragraph! In the second column, put the category id (1, 2, 3, 4, 5, 6). In the third column, put the original paragraph number from the paragraph numbering. In the forth column, calculate a revelance score of each paragraph between 0 and 1 for each paragraph using the relevance score factors below. Also use factors that Facebook, TikTok and Instagram use to calculate the likeliness of nudging users to stay longer on the feed and spend more time scrolling down more posts/paragraphs.
+No introductions or explainations. Start directly with returning a table. The tables should have four columns. In the first column, there should the unshortend original paragraph - don't omit or shorten it - the full paragraph! In the second column, put the category id (1, 2, 3, 4, 5, 6). In the third column, put the original paragraph number from the paragraph numbering. In the forth column, calculate a revelance score of each paragraph between 0 and 1 for each paragraph using the relevance score factors below. Also use factors that Facebook, TikTok and Instagram use to calculate the likeliness of nudging users to stay longer on the feed and spend more time scrolling down more posts/paragraphs.
 
 Relevance score factors:
 Specialty-independent:
+* time-criticality
+* urgency
 * Liability
 * Irreversability
 * Noticeable by a patient
@@ -22,3 +24,5 @@ Specialty-dependent:
 	* Developmental Milestone-relevant
 	* Affects future income of the pediatric patient
 	* Increases risk for other conditions/diseases
+
+No explanations or other text after the table. Just reply with the table and nothing before or after it.
