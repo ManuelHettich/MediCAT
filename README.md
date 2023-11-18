@@ -8,7 +8,9 @@ Pipeline[WIP]:
 2) Run plaintext2.py on the PDF to extract plain text [todo: prompt user for file name instead of hardcoding it]
 3) Link to preconfigured LLM to refine the plaintext into consistent paragraphs and remove the header, footer, page numbers: https://chat.openai.com/g/g-k6P5O3xjk-cdss2 | *or via API*
 4) Example output: paragraphs.txt
-5) Categorize paragraphs.txt with the following custom LLM: https://chat.openai.com/g/g-jjTX0bRBE-cdss3 
+5) Categorize & Rank
+    - Just Categorize paragraphs.txt (custom LLM): https://chat.openai.com/g/g-jjTX0bRBE-cdss3
+    - Categorize and rank the relevance (custom LLM): https://chat.openai.com/g/g-QE9ApW7aM-cdss3r
 
 ![alt1](Step3.png)
 
