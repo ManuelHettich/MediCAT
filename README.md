@@ -2,6 +2,8 @@
 
 [![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/ManuelHettich/MediCAT/tree/main)
 
+Live Demo App: https://medicat-t3eqm.ondigitalocean.app/
+
 [Insert pic]
 
 Pipeline[WIP]:
