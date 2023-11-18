@@ -20,6 +20,9 @@ Pipeline[WIP]:
 
 ![alt1](static/logo.png)
 
+Add your OpenAI API Key in your environmment as OPENAI_API_KEY:
+
+```export OPENAI_API_KEY=<your-key>```
 
 
 Link to final presentation: https://app.pitch.com/app/presentation/0459812a-7fac-4c17-9912-e4693c78876a/91459d0d-cf2b-4a19-ba8f-e6019a9081cb
