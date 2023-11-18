@@ -65,7 +65,7 @@ def process_pdf():
         print(paragraphs_json)
 
         # Use the LLM to classify the paragraphs
-        paragraphs_evaluated = paragraphs_evaluation(paragraphs)
+        paragraphs_evaluated = paragraphs_evaluation(paragraphs_json)
         print("-------- Evaluation --------")
         print(paragraphs_evaluated)
         
