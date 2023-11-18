@@ -1,6 +1,9 @@
-﻿[
-    {
-        "text": "",
-        "category_ID":
-    }
-]
+﻿{
+    [
+        {
+            "text": "",
+            "category_ID": "",
+            "paragraph": "": 
+        }
+    ]
+}
