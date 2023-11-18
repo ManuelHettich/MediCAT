@@ -1,0 +1,44 @@
+1 1 Recommendations Recommendations People have the right to be involved in discussions and make informed decisions about their care, as described in your care. Making decisions using NICE guidelines explains how we use words to show the strength (or certainty) of our recommendations, and has information about professional guidelines, standards and laws (including on consent and mental capacity), and safeguarding. NICE has also produced a patient decision aid to support discussions about statin therapy to reduce the risk of coronary heart disease and stroke. 1.1 1.1 Identifying and assessing cardiovascular disease Identifying and assessing cardiovascular disease (CVD) risk (CVD) risk Identifying people for full formal risk assessment Identifying people for full formal risk assessment 
+
+1.1.1 For the primary prevention of CVD in primary care, use a systematic strategy to identify people who are likely to be at high risk. [2008, amended 2014] [2008, amended 2014] 
+
+1.1.2 Prioritise people on the basis of an estimate of their CVD risk before a full formal risk assessment. Estimate their CVD risk using CVD risk factors already recorded in primary care electronic medical records. [2008] [2008] 
+
+1.1.3 People older than 40 should have their estimate of CVD risk reviewed on an ongoing basis. [2008] [2008] 
+
+1.1.4 Prioritise people for a full formal risk assessment if their estimated 10-year risk of CVD is 10% or more. [2008, amended 2014] [2008, amended 2014] 
+
+1.1.5 Discuss the process of risk assessment with the person identiNed as being at risk, including the option of declining any formal risk assessment. [2008] [2008] 
+
+1.1.6 Do not use opportunistic assessment as the main strategy in primary care to identify CVD risk in unselected people. [2008] [2008] Cardiovascular disease: risk assessment and reduction, including lipid modi4cation (CG181) NICE 2020. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-and- conditions#notice-of-rights). Last updated 27 September 2016 Page 9 of 38
+
+Full formal risk assessment Full formal risk assessment 
+
+1.1.7 Be aware that all CVD risk assessment tools can provide only an approximate value for CVD risk. Interpretation of CVD risk scores should always reOect informed clinical judgement. [2008] [2008] 
+
+1.1.8 Use the QRISK2 risk assessment tool to assess CVD risk for the primary prevention of CVD in people up to and including age 84 years. [new 2014] [new 2014] 
+
+1.1.9 Do not use a risk assessment tool to assess CVD risk in people with type 1 diabetes. See recommendations 
+
+1.3.23, 
+
+1.3.24 and 
+
+1.3.25 for advice on treatment with statins for people with type 1 diabetes. [new 2014] [new 2014] 
+
+1.1.10 Use the QRISK2 risk assessment tool to assess CVD risk in people with type 2 diabetes. [new 2014] [new 2014] 
+
+1.1.11 Do not use a risk assessment tool to assess CVD risk in people with an estimated glomerular Nltration rate (eGFR) less than 60 ml/min/1.73 m 2 and/or albuminuria. These people are at increased risk of CVD. See recommendation 
+
+1.3.27 for advice on treatment with statins for people with chronic kidney disease (CKD). [new 2014] [new 2014] People on renal replacement therapy are outside the scope of this guideline. 
+
+1.1.12 Complete as many Nelds of the risk assessment tool as possible. [new 2014] [new 2014] 
+
+1.1.13 Routinely record ethnicity, BMI and family history of premature CVD in medical records. [2008] [2008] 
+
+1.1.14 Consider socioeconomic status as an additional factor that contributes to CVD risk. [2008] [2008] 
+
+1.1.15 Do not use a risk assessment tool for people with pre-existing CVD. [2008, [2008, amended 2014] amended 2014] 
+
+1.1.16 Do not use a risk assessment tool for people who are at high risk of developing CVD because of familial hypercholesterolaemia (see the NICE guideline on familial hypercholesterolaemia) or other inherited disorders of lipid Cardiovascular disease: risk assessment and reduction, including lipid modi4cation (CG181) NICE 2020. All rights reserved. Subject to Notice of rights (https://www.nice.org.uk/terms-and- conditions#notice-of-rights). Last updated 27 September 2016 Page 10 of 38
+
