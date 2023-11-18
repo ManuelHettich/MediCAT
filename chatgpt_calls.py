@@ -28,6 +28,22 @@ Make your output adhere to this JSON format (one object in the list per paragrap
 text: unshortened original paragraph without the paragraph number at the beginning
 category_ID: 1, 2, 3, 4, 5, 6 (see above)
 paragraph_number: original paragraph number from the paragraph numbering as a string
+relevancy_score: calculate a revelance score of each paragraph between 0 and 1 for each paragraph using the relevance score factors below. Also use factors that Facebook, TikTok and Instagram use to calculate the likeliness of nudging users to stay longer on the feed and spend more time scrolling down more posts/paragraphs.
+
+Relevance score factors:
+Specialty-independent:
+* Liability
+* Irreversability
+* Noticeable by a patient
+* Noticeable by a colleague
+* Causation proofable
+* Affecting QoL-adjusted years
+
+Specialty-dependent:
+	(Example) Pediatrics:
+	* Developmental Milestone-relevant
+	* Affects future income of the pediatric patient
+	* Increases risk for other conditions/diseases
 
 Make your output adhere to this JSON format (one object in the list per paragraph) but don't add a JSON comment at the beginning or end, just output the pure JSON as in this example:
 {
@@ -35,7 +51,8 @@ Make your output adhere to this JSON format (one object in the list per paragrap
         {
             "text": "",
             "category_ID": "",
-            "paragraph_number": "": 
+            "paragraph_number": "",
+            "relevancy_score": ""
         }
     ]
 }

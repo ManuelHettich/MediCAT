@@ -3,7 +3,8 @@
         {
             "text": "",
             "category_ID": "",
-            "paragraph_number": "": 
+            "paragraph_number": "",
+            "relevancy_score": ""
         }
     ]
 }

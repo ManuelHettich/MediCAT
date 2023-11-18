@@ -18,7 +18,7 @@ def generateCSV(paragraphs_evaluated):
         # Write the data
         for item in paragraphs_evaluated:
             print(item)
-            writer.writerow([item["text"], item["category_ID"], item["paragraph_number"]])
+            writer.writerow([item["text"], item["category_ID"], item["paragraph_number"], item["relevancy_score"]])
 
 
 # test = """
