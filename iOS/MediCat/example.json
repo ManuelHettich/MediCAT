@@ -1,0 +1,68 @@
+[
+    {
+        "original_paragraph": "The primary care team should take over routine management of heart failure as soon as it has been stabilised and its management optimised. [2018] [2018]",
+        "category_id": 3,
+        "paragraph_number": "1.1.6",
+        "relevance_score": 0.55
+    },
+    {
+        "original_paragraph": "The specialist heart failure MDT should write a summary for each person with heart failure that includes: diagnosis and aetiology medicines prescribed, monitoring of medicines, when medicines should be reviewed and any support the person needs to take the medicines functional abilities and any social care needs social circumstances, including carers' needs. [2018] [2018]",
+        "category_id": 2,
+        "paragraph_number": "1.1.7",
+        "relevance_score": 0.65
+    },
+    {
+        "original_paragraph": "The summary should form the basis of a care plan for each person, which should include: plans for managing the person's heart failure, including follow-up care, rehabilitation and access to social care symptoms to look out for in case of deterioration a process for any subsequent access to the specialist heart failure MDT if needed contact details for a named healthcare coordinator (usually a specialist heart failure nurse) alternative local heart failure specialist care providers, for urgent care or review. additional sources of information for people with heart failure. [2018] [2018]",
+        "category_id": 3,
+        "paragraph_number": "1.1.8",
+        "relevance_score": 0.70
+    },
+    {
+        "original_paragraph": "Give a copy of the care plan to the person with heart failure, their family or carer if appropriate, and all health and social care professionals involved in their care. [2018] [2018]",
+        "category_id": 3,
+        "paragraph_number": "1.1.9",
+        "relevance_score": 0.40
+    },
+    {
+        "original_paragraph": "Take a careful and detailed history, and perform a clinical examination and tests to confirm the presence of heart failure. [2010] [2010]",
+        "category_id": 1,
+        "paragraph_number": "1.2.1",
+        "relevance_score": 0.75
+    },
+    {
+        "original_paragraph": "Measure N-terminal pro-B-type natriuretic peptide (NT-proBNP) in people with suspected heart failure. [2018] [2018]",
+        "category_id": 1,
+        "paragraph_number": "1.2.2",
+        "relevance_score": 0.80
+    },
+    {
+        "original_paragraph": "Because very high levels of NT-proBNP carry a poor prognosis, refer people with suspected heart failure and an NT-proBNP level above 2,000 ng/litre (236 pmol/litre) urgently, to have specialist assessment and transthoracic echocardiography within 2 weeks. [2018] [2018]",
+        "category_id": 1,
+        "paragraph_number": "1.2.3",
+        "relevance_score": 0.85
+    },
+    {
+        "original_paragraph": "Refer people with suspected heart failure and an NT-proBNP level between 400 and 2,000 ng/litre (47 to 236 pmol/litre) to have specialist assessment and transthoracic echocardiography within 6 weeks. [2018] [2018]",
+        "category_id": 1,
+        "paragraph_number": "1.2.4",
+        "relevance_score": 0.80
+    },
+    {
+        "original_paragraph": "Be aware that: an NT-proBNP level less than 400 ng/litre (47 pmol/litre) in an untreated person makes a diagnosis of heart failure less likely the level of serum natriuretic peptide does not differentiate between heart failure with reduced ejection fraction and heart failure with preserved ejection fraction. [2018] [2018]",
+        "category_id": 1,
+        "paragraph_number": "1.2.5",
+        "relevance_score": 0.70
+    },
+    {
+        "original_paragraph": "Review alternative causes for symptoms of heart failure in people with NT- proBNP levels below 400 ng/litre. If there is still concern that the symptoms might be related to heart failure, discuss with a physician with subspeciality training in heart failure. [2018] [2018]",
+        "category_id": 1,
+        "paragraph_number": "1.2.6",
+        "relevance_score": 0.75
+    },
+    {
+        "original_paragraph": "Be aware that: obesity, African or African Caribbean family origin, or treatment with diuretics, angiotensin-converting enzyme (ACE) inhibitors, beta-blockers, angiotensin II receptor blockers (ARBs) or mineralocorticoid receptor antagonists (MRAs) can reduce levels of serum natriuretic peptides high levels of serum natriuretic peptides can have causes other than heart failure (for example, age over 70 years, left ventricular hypertrophy, ischaemia, tachycardia, right ventricular overload, hypoxaemia [including pulmonary embolism], renal dysfunction [eGFR less than 60 ml/minute/1.73 m2], sepsis, chronic obstructive pulmonary disease, diabetes, or cirrhosis of the liver). [2010, amended 2018] [2010, amended 2018]",
+        "category_id": 5,
+        "paragraph_number": "1.2.7",
+        "relevance_score": 0.70
+    }
+]
