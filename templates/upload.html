@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Upload PDF</title>
-</head>
-<body>
-    <h1>Upload a PDF File</h1>
-    <form action="/process_pdf" method="post" enctype="multipart/form-data">
-        <input type="file" name="file">
-        <input type="submit" value="Upload">
-    </form>
-</body>
+    <head>
+        <title>Upload PDF</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            /* Loader styles */
+            .loader {
+                border: 6px solid #f3f3f3;
+                border-top: 6px solid #3498db;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                animation: spin 2s linear infinite;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+
+            /* Centering form on the page */
+            .container {
+                max-width: 500px;
+                margin-top: 50px;
+            }
+
+            /* Additional styles for the logo */
+            .logo {
+                width: 120px; /* Or any other size */
+                height: 120px; /* Equal to width to maintain aspect ratio */
+                object-fit: cover; /* Ensures the image covers the area without stretching */
+                display: block; /* For centering */
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container text-center">
+            <img src="static/logo.png" alt="Medicat Logo" class="rounded-circle logo mb-4">
+            <h1>Upload a PDF File</h1>
+            <form id="pdf-upload-form" action="/process_pdf" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="file" name="file" class="form-control-file">
+                </div>
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </form>
+            <!-- Loader -->
+            <div id="loader" class="loader" style="display: none;"></div>
+        </div>
+
+        <!-- Bootstrap JS and Popper.js, needed for Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script>
+            // JavaScript to show loader on form submit
+            document.getElementById('pdf-upload-form').onsubmit = function() {
+                document.getElementById('loader').style.display = 'block';
+            };
+        </script>
+    </body>
 </html>

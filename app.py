@@ -46,8 +46,10 @@ def process_pdf():
         # Extract the plain text from the PDF
         plain_text = extract_pdf(pdf_path)
 
+        print(plain_text)
+
         # Save the output text to a file for debugging purposes
-        plain_text_path = 'output_text_file.txt'
+        plain_text_path = 'input_text_file.txt'
         
         # Delete output text file if it already exists
         if os.path.exists(plain_text_path):
@@ -58,10 +60,16 @@ def process_pdf():
             file.write(plain_text)
 
         # Use LLM to segment the text into paragraphs
-        paragraphs = plaintext_to_paragraphs(plain_text)
-        print(paragraphs)
+        paragraphs_json = plaintext_to_paragraphs(plain_text)
+        print("-------- Paragraphs --------")
+        print(paragraphs_json)
+
+        # Use the LLM to classify the paragraphs
+        paragraphs_evaluated = paragraphs_evaluation(paragraphs)
+        print("-------- Evaluation --------")
+        print(paragraphs_evaluated)
         
-        return paragraphs
+        return paragraphs_evaluated
 
 
 if __name__ == '__main__':
