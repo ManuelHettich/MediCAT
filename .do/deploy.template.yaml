@@ -9,4 +9,3 @@ spec:
     envs:
     - key: OPENAI_API_KEY
       scope: RUN_AND_BUILD_TIME
-      type: SECRET
