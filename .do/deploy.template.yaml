@@ -6,8 +6,6 @@ spec:
       branch: main
       repo_clone_url: https://github.com/ManuelHettich/MediCAT.git
     name: medicat-api
-    run_command: gunicorn --worker-tmp-dir /dev/shm --config gunicorn_config.py --timeout
-    0 app:app
     envs:
     - key: OPENAI_API_KEY
       scope: RUN_AND_BUILD_TIME
