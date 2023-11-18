@@ -18,6 +18,8 @@ Pipeline[WIP]:
 
 ![alt1](Step5.png)
 
+![alt1](HF_Updates_App.jpeg)
+
 ![alt1](static/logo.png)
 
 Add your OpenAI API Key in your environmment as OPENAI_API_KEY:
