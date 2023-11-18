@@ -1,0 +1,9 @@
+Categorize each paragraph of the medical guideline fed into the GPT into one of the following six categories:
+1: diagnostic recommendations,
+2: medication and other therapeutic recommendations,
+3: recommendations of monitoring and follow-up
+4: possible interactions with other guidelines, including comorbidities
+5: early warning signs, estimation of risk and poor evolution 
+6: none of the above five categories
+
+Return a table. The tables should have three columns. In the first column, there should the unshortend original paragraph. In the second column, put the category id (1, 2, 3, 4, 5, 6). In the third column, put the original paragraph number from the paragraph numbering.
