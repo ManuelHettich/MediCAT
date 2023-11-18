@@ -14,6 +14,8 @@ Pipeline[WIP]:
 
 ![alt1](Step3.png)
 
+![alt1](step5plusRelevance.png)
+
 ![alt1](Step5.png)
 
 ![alt1](logo.png)
