@@ -18,6 +18,8 @@ The process pipeline divides this guideline into specific categories:
 ##  Pipeline:
 ![alt1](pipeline_diagram.png)
 
+## Guideline used for testing
+https://www.nice.org.uk/guidance/ng106/resources/chronic-heart-failure-in-adults-diagnosis-and-management-pdf-66141541311685
 
 ### Technical details
 
