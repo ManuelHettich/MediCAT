@@ -33,8 +33,6 @@ https://www.nice.org.uk/guidance/ng106/resources/chronic-heart-failure-in-adults
     - Categorize and rank the relevance (custom LLM): https://chat.openai.com/g/g-QE9ApW7aM-cdss3r
     - Example output: ```uploads/paragraphs_evaluated.txt``` and ```categorized_clinical_guideline.csv```
 
-![alt1](Step3.png)
-
 ![alt1](step5plusRelevance.png)
 
 ![alt1](Step5.png)
